@@ -29,12 +29,20 @@ function mostrardatos(data){
     let template = `<h3>${data.location.name} / ${data.location.region} / ${data.location.country}</h3>
     <p>${datosHoy.condition.text}</p>`;
     cabecera.innerHTML = template;
-
+    
+    let src = '';
+    if(document.body.className === 'home'){
+        src = `./assets/iconos/celsius.png`
+    }
+    else{
+        src = `../assets/iconos/celsius.png`;     
+    }
+    
     let tiempoHoy = 
     `<img src="${datosHoy.condition.icon}" alt="tiempo">
     <div class="temperatura" >
         <h1>${datosHoy.temp_c}</h1>
-        <img src="../assets/iconos/celsius.png" alt="termometro">
+        <img src="${src}" alt="termometro">
     </div>
     <div class="datos" id="otrosDatos">
         <p>Precipitaciones: ${datosHoy.precip_mm}% </p>

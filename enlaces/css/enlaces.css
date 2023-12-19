@@ -1,0 +1,78 @@
+.enlaces{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    
+}
+.container, form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 0;
+    padding: 2%;
+}
+input[type="text"]{
+	height: 4vh;
+	border-radius: 5px;
+}
+#respuesta{
+    
+    margin-top: 2%;
+    padding: 1% 2%;
+    max-height: 35vh;
+    width: 390px;
+    overflow-y: auto;    
+}
+.fondo{
+    background-color: #7e7a7a3b;
+    border-radius: 10px;
+}
+#listado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+}
+#listado li{
+    background-color: #333333d1;
+    padding: 4%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+    position: relative;
+}
+.eliminar{
+    cursor: pointer;
+    background: #333333d1;
+    border: none;
+    color: cadetblue;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border-radius: 50%;
+    padding: 6% 11%;
+}
+
+
+@media screen and (max-width: 780px){
+    #section {
+        align-items: center;
+    }
+    #respuesta{
+        max-width: 85%;
+        margin-top: 5%;
+    }
+   #listado{
+    font-size: 14px;
+   } 
+   .eliminar{font-size: 11px;}
+   #respuesta{padding-top: 2%;}
+}

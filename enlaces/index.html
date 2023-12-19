@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../passwords/css/pass.css">
+    <link rel="stylesheet" href="./css/enlaces.css">
+    <title>Enlaces</title>
+</head>
+<body>
+    <header id="header">
+        <a href="../index.html"><img src="../assets/iconos/casa.png" alt="Home"></a>
+        <a href="../index.html"> Go Home</a>
+    </header>
+    <main>
+        <section class="enlaces">
+            <div class="container">
+                <div class="titulo">
+                    <h2>Añade tu enlace de interés</h2>
+                    <img src="../assets/iconos/cadena.png" alt="cadena">
+                </div>
+                <form action = "">
+                    <input type="text" placeholder="Nombre de tu enlace" id="enlace" required>
+                    <input type="text" placeholder="Url de tu enlace" id="url" required>
+                    <input type="submit"  class="boton" id="enviar" value="Añadir enlace">
+                </form>
+            </div>
+            <div id="respuesta">
+                <ul id="listado"></ul>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <a href="../reloj/index.html"><img src="../assets/iconos/reloj.png" alt="reloj"></a>
+                <a href="../passwords/index.html"><img src="../assets/iconos/candado.png" alt="candado"></a>
+                <a href=""><img src="../assets/iconos/cadena.png" alt="cadena"></a>
+                <a href="../tiempo/index.html"><img src="../assets/iconos/parcialmente-nublado.png" alt="tiempo"></a>
+            </div>
+        </footer>
+    <script src="../js/script.js"></script>
+    <script src="./js/enlaces.js"></script>
+</body>
+</html>

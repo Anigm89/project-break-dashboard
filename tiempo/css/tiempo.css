@@ -1,0 +1,99 @@
+#sectionTiempo{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    
+}
+#sectionTiempo .container{
+	background-color: #333333d1;
+	border-radius: 15px;
+	box-shadow: 1px 2px 6px 1px;
+	padding: 3%;
+	margin-top: 6%;
+}
+.cabecera h3{
+    font-size: 21px;
+}
+.cabecera p{
+    font-size: 17px;
+    color: lightskyblue;
+}
+.tiempo{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 4%;
+}
+.tiempo img{
+    width: 60px;
+}
+.temperatura{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 50px;
+    padding: 0 5%;
+}
+.temperatura img{
+    width: 32px;
+}
+.datos p{
+    font-size: 14px;
+    line-height: 1.3;
+    color: lightsteelblue;
+}
+.horas{
+    max-width: 400px;
+    overflow-x: scroll;
+   /* margin-top: 4%;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+.cadahora{
+    padding: 4% 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.cadahora p{
+    padding: 7% 0;
+}
+
+
+/* ---------- scrollbar ------------ */
+
+.horas::-webkit-scrollbar-thumb {
+    background-color:#0e4a85;
+    border-radius: 20px;
+    border: 1px solid #0e4a85;
+    width: 5px;
+}
+.horas::-webkit-scrollbar-track-piece {
+    background-color: lightskyblue;
+}
+.horas::-webkit-scrollbar-button:horizontal:start:decrement {
+    background: transparent url(../../assets/iconos/left.png) no-repeat center center;
+    background-size: contain;
+  }
+  .horas::-webkit-scrollbar-button:horizontal:end:increment {
+      background: transparent url(../../assets/iconos/right.png) no-repeat center center;
+      background-size: contain;
+  }
+
+
+  @media screen and (max-width: 780px){
+    .container{max-width: 88%;}
+    .cabecera h3{font-size: 18px;}
+    .cadahora img{ width: 50px; }
+  }
+  
+  

@@ -1,0 +1,241 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Poppins', sans-serif;
+	color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+	cursor: pointer;
+}
+
+body{
+	background-image: url('../assets/fondo/img0.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+    height: 100vh;
+	transition: all .5s;
+}
+
+/* --- header --- */
+
+#header{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+	gap: 10px;
+	padding: 20px;
+}
+#header img{
+	width: 25px;
+	height: 25px;
+}
+
+/*  ----- footer ---------  */
+.footer{
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+	gap: 10px;
+	padding: 15px;
+	width: 60%;
+    position: fixed;
+	bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 2%;
+
+}
+.footer img{
+	width: 2vw;
+	height: fit-content;
+}
+
+
+
+/* ------ scrollbar------*/
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color:#333333;
+    border-radius: 20px;
+    border: 1px solid #333;
+    width: 5px;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: cadetblue;
+    background-clip: content-box;
+    border-radius: 6px;
+    border: 3px solid transparent;
+  }
+ 
+  ::-webkit-scrollbar-track-piece:decrement {
+    background: rgb(29, 123, 126);
+    background-clip: content-box;
+    border: solid 4px transparent;
+  }
+  .home::-webkit-scrollbar-track-piece, .home::-webkit-scrollbar-track-piece:decrement {border: none;}
+
+
+/*  --------  index ------------- */
+
+.mainhome{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#seccion1{
+	width: 47%;
+	height: 85vh;
+}
+#seccion2{
+	width: 45%;
+	height: 85vh;
+	overflow-y: auto;
+}
+
+/* --------- enlaces index -------------*/
+#seccion1 .enlaces #respuesta{padding: 2%;}
+#seccion1 .enlaces .container .titulo{font-size: 27px;}
+#seccion1 .enlaces .container{width: 400px;}
+
+/* --------- reloj index -------------*/
+#seccion2 #reloj .container{
+	margin: 0; 
+	background-color: transparent; 
+	box-shadow: none;
+}
+
+#seccion2 #reloj .container p:first-of-type, #seccion2 #reloj .container .frase{display: none;}
+#seccion2 #reloj .container .hora{padding: 0;}
+#seccion2 #reloj .container .fecha{
+	font-size: 23px ;
+	padding: 0%;
+	margin: 0;
+}
+
+
+/* ----------- tiempo index ------------- */
+
+#seccion2 #sectionTiempo .container {margin-top: 0;}
+#seccion2 #sectionTiempo .container p { margin: 1% 0;}
+#seccion2 #sectionTiempo .container .tiempo{ margin: 0;}
+#seccion2 #sectionTiempo .container .tiempo .datos p{ 
+	font-size: 14px;
+	line-height: 1;
+}
+#seccion2 #sectionTiempo .container .horas {padding-bottom: 2%;}
+#seccion2 #sectionTiempo .container .horas .cadahora{padding: 0 2%;}
+#seccion2 #sectionTiempo .container .horas .cadahora p{padding: 0 ;}
+#seccion2 #sectionTiempo .container .horas .cadahora img{ height: 55px;}
+
+
+/* ----------- contraseñas index ------------- */
+
+#seccion2 .passwords .container{
+	display: inline;
+	margin-top: 4%;
+	margin-bottom: 1%;
+	width: 400px;
+}
+#seccion2 .passwords .container .titulo{font-size: 27px;}
+
+
+
+
+ /*  -----------------------------------------  */
+
+@media screen and (max-width: 970px){
+	#seccion2 #sectionTiempo .container, #seccion1 .enlaces .container{max-width: 90%;}
+	#seccion2 .passwords .container .titulo, #seccion1 .enlaces .container .titulo {font-size: 23px;}
+	#seccion2 .passwords .container p{font-size: 15px;}
+	#seccion2 .passwords .container {width: 90%;}
+	#seccion1 .enlaces #respuesta {max-width: 92%;}
+}
+@media screen and (max-width: 780px){
+	body{
+		height: fit-content; 
+		background-attachment: fixed;
+	}
+	.footer img{
+		width: 4vw;
+	}
+	.mainhome{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	#seccion1, #seccion2{
+		width: 94%;
+		height: fit-content;
+		overflow: auto;
+	}
+	.home .footer{
+		position: relative;
+		margin-left: 33%;
+	}
+
+	#seccion1 .enlaces .container{margin-top: 6%;}
+	#seccion2 .passwords .container, #seccion1 .enlaces .container, #seccion2 #sectionTiempo .container{ width: 400px; max-width: 90%;}
+	#seccion2 .passwords .container .titulo, #seccion1 .enlaces .container .titulo {font-size: 20px;}
+
+}
+@media screen and (max-width: 400px){
+	#seccion2 #sectionTiempo .container .horas {max-width: 332px;}
+}
+

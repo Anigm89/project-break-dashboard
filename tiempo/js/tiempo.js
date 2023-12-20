@@ -24,7 +24,7 @@ const ObtenerDatos = async () =>{
 ObtenerDatos();
 
 function mostrardatos(data){
-
+console.log(data)
     let datosHoy = data.current;
     let template = `<h3>${data.location.name} / ${data.location.region} / ${data.location.country}</h3>
     <p>${datosHoy.condition.text}</p>`;
@@ -32,7 +32,7 @@ function mostrardatos(data){
     
     let src = '';
     if(document.body.className === 'home'){
-        src = `./assets/iconos/celsius.png`
+        src = `./assets/iconos/celsius.png`;
     }
     else{
         src = `../assets/iconos/celsius.png`;     

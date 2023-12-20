@@ -239,3 +239,6 @@ body{
 	#seccion2 #sectionTiempo .container .horas {max-width: 332px;}
 }
 
+@media screen and (max-width: 372px){
+	#seccion2 {overflow-x: hidden;}
+}

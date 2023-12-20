@@ -15,6 +15,9 @@
     margin-top: 0;
     padding: 2%;
 }
+
+form{padding: 0;}
+
 input[type="text"]{
 	height: 4vh;
 	border-radius: 5px;

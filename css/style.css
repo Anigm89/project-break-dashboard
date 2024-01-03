@@ -171,7 +171,7 @@ body{
 
 /* ----------- tiempo index ------------- */
 
-#seccion2 #sectionTiempo .container {margin-top: 0;}
+#seccion2 #sectionTiempo .container {margin-top: 0; display: inline;}
 #seccion2 #sectionTiempo .container p { margin: 1% 0;}
 #seccion2 #sectionTiempo .container .tiempo{ margin: 0;}
 #seccion2 #sectionTiempo .container .tiempo .datos p{ 

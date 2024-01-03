@@ -13,6 +13,24 @@
 	padding: 3%;
 	margin-top: 6%;
 }
+#ciudad{
+    height: 25px;
+    border-radius: 5px;
+}
+#buscador{
+    height: 22px;
+    border: none;
+    border-radius: 5px;
+}
+#buscar{
+    background: lightskyblue;
+    border: none;
+    color: #fff;
+    height: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cabecera{margin-top: 2%;}
 .cabecera h3{
     font-size: 21px;
 }
@@ -67,6 +85,7 @@
 .cadahora p{
     padding: 7% 0;
 }
+
 
 
 /* ---------- scrollbar ------------ */
